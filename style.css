@@ -3,13 +3,18 @@
 /* body tag  */
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 0 150px;
+    margin: 0 auto;
+}
+
+header{
+    margin: 50px 250px;
 }
 
 .banner{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 250px;
 }
 
 .banner h1{
@@ -17,10 +22,10 @@ body{
     font-weight: 700;
     margin-bottom: 5px;
 }
-/* 
+
 .banner p{
     line-height: 2rem;
-} */
+}
 
 .half-width{
     width: 50%;
@@ -28,7 +33,13 @@ body{
 
 .half-width img{
     width: 70%;
-    margin-left: 80px; 
+    margin-left: 80px;
+    animation: animate1 1.01s ease-out infinite alternate;
+}
+@keyframes animate1{
+    from{
+        transform: scale(1.10);
+    }
 }
 
 .half-width a{
@@ -36,8 +47,12 @@ body{
     background-color: #FF3380;
     color: white;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     padding-top: 10px;
+}
+
+.arrow-icon{
+    margin-left: 4px;
 }
 
 
@@ -45,33 +60,130 @@ body{
 .products{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin: 0 50px;
+    margin: 0 250px;
+}
+
+.text-center{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
 }
 
 .product{
-    /* width: 200px; */
-    /* height: 474px; */
     padding: 26px;
     margin: 26px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(146, 146, 146, 0.2);
-    /* border: 1px solid black; */
 }
 
 .product img{
     width: 100%;
 }
-.social-media-icons li{
+
+.product h2{
+    font-size: 26px;
+    font-weight: 300;
+    margin:0px;
+}
+
+.product i{
+    color: rgb(255, 208, 0);
+}
+
+.see-more{
+    text-align: right;
+}
+.see-more a{
+    text-decoration: none;
+    color: #FF3380;
+    margin-right: 275px;
+}
+
+
+.subscription{
     display: flex;
-    list-style-type: none;
-    margin-right: 14px;
-    font-size: 17px;
-    padding: 3.5px 8px;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 250px;
+    padding: 50px;
+    background-color: #F8F7FF;
     border-radius: 20px;
 }
-.social-media-icons a{
-    color: #969BAB;
+
+.subscribe{
+    margin-right: 70px;
 }
-.social-media-icons li:nth-child(4){
-    margin-right: 0;
+
+.subscribe h1{
+    font-size: 30px;
+    margin: 0;
+}
+
+.subscribe input{
+    padding: 10px;
+    border: 1px solid #0a0826;
+    border-radius: 6px;
+}
+
+.subscribe button{
+    padding: 10px;
+    background-color: #0a0826;
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    margin-left: 6px;
+}
+
+.footer{
+    background-color: #0a0826;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.footer p{
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.icons a{
+    color: white;
+    margin: 10px;
+    font-size: 26px;
+    background-color: #22213c;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width:480px){
+    header{
+        margin: 50px;
+    }
+    .banner{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+    .banner h1{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    .products{
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+    .subscription{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .subscription img{
+        width: 100%;
+    }
+    
+
 }
