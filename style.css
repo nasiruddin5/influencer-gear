@@ -164,16 +164,32 @@ header{
         width: 100%;
         flex-direction: column;
         align-items: center;
-        margin: 20px;
+        margin: 40px;
     }
     .banner h1{
-        font-size: 30px;
+        font-size: 32px;
         font-weight: 700;
-        margin-bottom: 5px;
+        margin-bottom: 16px;
+    }
+
+    .half-width{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .half-width img{
+        width: 80%;
+        justify-content: start;
+        margin-top: 50px;
     }
     .products{
         grid-template-columns: 1fr;
         margin: 20px;
+    }
+
+    .product{
+        padding: 26px;
+        margin: 10px;
     }
 
     .see-more{
@@ -190,6 +206,8 @@ header{
         align-items: center;
         justify-content: center;
         margin: 20px;
+        margin-right: 0px;
+        padding: 30px;
         text-align: center;
     }
 
@@ -197,6 +215,11 @@ header{
         font-size: 24px;
         text-align: center;
         margin: 0;
+    }
+
+    .subscribe h3{
+        font-size: 16px;
+        text-align: center;
     }
 
     .subscription img{
